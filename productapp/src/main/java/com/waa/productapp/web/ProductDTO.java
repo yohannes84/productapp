@@ -1,24 +1,26 @@
-package com.waa.productapp.domain;
+package com.waa.productapp.web;
 
+import com.waa.productapp.domain.Review;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.jmx.export.annotation.ManagedAttribute;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 import java.util.List;
 
-@Document
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
-    @Id
+public class ProductDTO {
+
     @Size(min =4, max = 12)
     @NotNull(message = "Product Number cannot be blank")
     private String productNumber;

@@ -6,3 +6,5 @@ productapp.iml
 ../.idea/target/
 ./target
 ./.idea/sonarlint
+../.idea/
+./target/
