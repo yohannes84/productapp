@@ -4,3 +4,5 @@ productapp.iml
 ../.idea/*.xml
 .idea
 ../.idea/target/
+./target
+./.idea/sonarlint
