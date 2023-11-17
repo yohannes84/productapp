@@ -1,3 +1,6 @@
 vcs.xml
 productapp.iml
 *.xml
+../.idea/*.xml
+.idea
+../.idea/target/
