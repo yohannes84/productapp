@@ -3,7 +3,7 @@ package com.waa.productapp.web;
 import com.waa.productapp.domain.Product;
 
 public class ProductMapper {
-    public static Product getBook(ProductDTO productDTO){
+    public static Product getProduct(ProductDTO productDTO){
 
         return Product.builder()
                 .productNumber(productDTO.getProductNumber())

@@ -4,7 +4,7 @@ import com.waa.productapp.domain.Review;
 
 public class ReviewMapper {
 
-    public static ReviewDTO mapToDTO(Review review) {
+    public static ReviewDTO getReviewDTO(Review review) {
         return ReviewDTO.builder()
                 .name(review.getName())
                 .rating(review.getRating())
@@ -12,7 +12,7 @@ public class ReviewMapper {
                 .build();
     }
 
-    public static Review mapToEntity(ReviewDTO reviewDTO) {
+    public static Review getReview(ReviewDTO reviewDTO) {
         return Review.builder()
                 .name(reviewDTO.getName())
                 .rating(reviewDTO.getRating())
